@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-1-selfeducation/static/css/main.b87514ff.css",
+    "main.js": "/react-1-selfeducation/static/js/main.5a9bc161.js",
+    "index.html": "/react-1-selfeducation/index.html",
+    "main.b87514ff.css.map": "/react-1-selfeducation/static/css/main.b87514ff.css.map",
+    "main.5a9bc161.js.map": "/react-1-selfeducation/static/js/main.5a9bc161.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b87514ff.css",
+    "static/js/main.5a9bc161.js"
+  ]
+}
