@@ -26,11 +26,11 @@ export const Item = styled.li`
 
 `
 export const LabelStats = styled.span`
-     font-weight: 600;
+  font-weight: 600;
   font-size: 18px;
   margin-bottom: 5px;
 `
 export const PercentageStats = styled.span`
-     font-weight: 700;
-     font-style: 20px;
+  font-weight: 700;
+  font-style: 20px;
 `
