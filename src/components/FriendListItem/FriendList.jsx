@@ -7,12 +7,12 @@ export default function FriendList({ friends }) {
         <FriendsContainer>
             <List>
                 {
-                    friends.map(({ avatar, name, id, isOline }) => (
+                    friends.map(({ avatar, name, id, isOnline }) => (
                         < FriendListItem
                             avatar={avatar}
                             key={id}
                             name={name}
-                            isOline={isOline}
+                            isOnline={isOnline}
                         />
                     ))
                 }
@@ -27,7 +27,7 @@ FriendList.propType = {
             key: PropTypes.string.isRequired,
             avatar: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
-            isOline: PropTypes.bool.isRequired,
+            isOnline: PropTypes.bool.isRequired,
         })
     )
 

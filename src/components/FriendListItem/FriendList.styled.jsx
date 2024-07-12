@@ -1,14 +1,13 @@
 import styled from '@emotion/styled';
 
 export const FriendsContainer = styled.div`
-    display: flex;
+ display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  width: 370px;
   align-items: center;
+  margin-bottom: 15px;
 `
 export const List = styled.ul`
-    display: flex;
+  display: flex;
   flex-direction: column;
   width: inherit;
   padding: 0;

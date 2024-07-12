@@ -1,33 +1,51 @@
 import PropTypes from 'prop-types';
+import {Table, TableRow} from '../TransactionHistory/TransactionHistory.styled'
 
 export default function TransactionHistory({ items }) {
     return (
-        <table className="transaction-history">
+        <Table>
             <thead>
-                <tr>
+                <TableRow style={{ backgroundColor: createColor() }}>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
-                </tr>
+                </TableRow>
             </thead>
 
             <tbody>
                 {
                     items.map(({ id, type, amount, currency }) => {
                         return (
-                            <tr key={id}>
+                            <TableRow key={id}
+                            style={{ backgroundColor: createColor() }}
+                            >
                                 <td>{type}</td>
                                 <td>{amount}</td>
                                 <td>{currency}</td>
-                            </tr>
+                            </TableRow>
                         )
                     })
                 }
 
             </tbody>
-        </table>
+        </Table>
     )
 }
+
+const createColor = () => {
+    const color =
+      'rgba(' +
+      Math.round(Math.random() * 255) +
+      ',' +
+      Math.round(Math.random() * 255) +
+      ',' +
+      Math.round(Math.random() * 255) +
+      ',' +
+      0.2 +
+      ')';
+    // console.log(color);
+    return color;
+  };
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
