@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Container, Description, UserName, Tag, Avatar, Location, Stats, StatsItem, Label, Quantity } from '../Profile/Profile.styled'
+import { Container, Description, UserName, Tag, Avatar, Location, Stats, StatsItem, Label, Quantity } from '../Profile/Profile.styled';
+import { FaUserAlt, FaLocationDot } from 'react-icons/fa';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
     return (
@@ -7,12 +8,12 @@ export default function Profile({ username, tag, location, avatar, stats }) {
             <Description>
                 <Avatar
                     src={avatar}
-                    alt={username}
-
+                    alt={username} 
                 />
-                <UserName>{username}</UserName>
+                <UserName><FaUserAlt size={16}/>  {username}</UserName>
+                
                 <Tag>{tag}</Tag>
-                <Location>{location}</Location>
+                <Location> <FaLocationDot size={16}/>  {location}</Location>
             </Description>
 
             <Stats>

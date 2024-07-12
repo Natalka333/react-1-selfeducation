@@ -23,6 +23,10 @@ margin-bottom: 5px;
   font-weight: bold;
   font-size: 30px;
 `
+// export const FaUserAlt = styled.i`
+//   size: 16px;
+// `
+
 export const Tag = styled.p`
  margin-bottom: 15px;
   font-size: 18px;
