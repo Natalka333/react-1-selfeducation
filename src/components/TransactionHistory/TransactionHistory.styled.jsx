@@ -11,3 +11,13 @@ export const TableRow = styled.tr`
   height: 40px;
   align-items: center;
 `
+
+export const TableTitle = styled.th`
+      font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+`
+export const TableList = styled.td`
+     width: inherit;
+  font-weight: 500;
+`

@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import {Table, TableRow} from '../TransactionHistory/TransactionHistory.styled'
+import { Table, TableRow, TableTitle, TableList } from '../TransactionHistory/TransactionHistory.styled'
 
 export default function TransactionHistory({ items }) {
     return (
         <Table>
             <thead>
                 <TableRow style={{ backgroundColor: createColor() }}>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <TableTitle>Type</TableTitle>
+                    <TableTitle>Amount</TableTitle>
+                    <TableTitle>Currency</TableTitle>
                 </TableRow>
             </thead>
 
@@ -17,11 +17,11 @@ export default function TransactionHistory({ items }) {
                     items.map(({ id, type, amount, currency }) => {
                         return (
                             <TableRow key={id}
-                            style={{ backgroundColor: createColor() }}
+                                style={{ backgroundColor: createColor() }}
                             >
-                                <td>{type}</td>
-                                <td>{amount}</td>
-                                <td>{currency}</td>
+                                <TableList>{type}</TableList>
+                                <TableList>{amount}</TableList>
+                                <TableList>{currency}</TableList>
                             </TableRow>
                         )
                     })
@@ -34,18 +34,18 @@ export default function TransactionHistory({ items }) {
 
 const createColor = () => {
     const color =
-      'rgba(' +
-      Math.round(Math.random() * 255) +
-      ',' +
-      Math.round(Math.random() * 255) +
-      ',' +
-      Math.round(Math.random() * 255) +
-      ',' +
-      0.2 +
-      ')';
+        'rgba(' +
+        Math.round(Math.random() * 255) +
+        ',' +
+        Math.round(Math.random() * 255) +
+        ',' +
+        Math.round(Math.random() * 255) +
+        ',' +
+        0.2 +
+        ')';
     // console.log(color);
     return color;
-  };
+};
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
