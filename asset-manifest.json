@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-1-selfeducation/static/css/main.b87514ff.css",
-    "main.js": "/react-1-selfeducation/static/js/main.06602b9f.js",
+    "main.css": "/react-1-selfeducation/static/css/main.092fb4dc.css",
+    "main.js": "/react-1-selfeducation/static/js/main.3f66bf09.js",
     "index.html": "/react-1-selfeducation/index.html",
-    "main.b87514ff.css.map": "/react-1-selfeducation/static/css/main.b87514ff.css.map",
-    "main.06602b9f.js.map": "/react-1-selfeducation/static/js/main.06602b9f.js.map"
+    "main.092fb4dc.css.map": "/react-1-selfeducation/static/css/main.092fb4dc.css.map",
+    "main.3f66bf09.js.map": "/react-1-selfeducation/static/js/main.3f66bf09.js.map"
   },
   "entrypoints": [
-    "static/css/main.b87514ff.css",
-    "static/js/main.06602b9f.js"
+    "static/css/main.092fb4dc.css",
+    "static/js/main.3f66bf09.js"
   ]
 }
