@@ -3,8 +3,8 @@
 // import FriendList from "./FriendListItem/FriendList";
 // import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
-import Counter from "./Counter/Counter";
-
+// import Counter from "./Counter/Counter";
+import Dropdown from "./Dropdown/Dropdown";
 
 // import user from '../Data/user.json'
 // import data from '../Data/data.json'
@@ -15,8 +15,10 @@ import Counter from "./Counter/Counter";
 export const App = () => {
   return (
     <div>
-      <Counter initialValue={5}/>
+      
+     <Dropdown/>
 
+ {/* <Counter initialValue={5}/> */}
       {/* <Profile
         username={user.username}
         tag={user.tag}
