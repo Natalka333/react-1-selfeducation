@@ -34,3 +34,6 @@ export const PercentageStats = styled.span`
   font-weight: 700;
   font-style: 20px;
 `
+
+
+
