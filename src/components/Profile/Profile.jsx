@@ -10,11 +10,11 @@ export default function Profile({ username, tag, location, avatar, stats }) {
             <Description>
                 <Avatar
                     src={avatar}
-                    alt={username} 
+                    alt={username}
                 />
-                <UserName><FaUserAlt size={iconSize.sm}/>  {username}</UserName>
-                <Tag><FaTags size={iconSize.sm}/>  {tag}</Tag>
-                <Location><FaMapMarkerAlt size={iconSize.sm}/>  {location}</Location>
+                <UserName><FaUserAlt size={iconSize.sm} />  {username}</UserName>
+                <Tag><FaTags size={iconSize.sm} />  {tag}</Tag>
+                <Location><FaMapMarkerAlt size={iconSize.sm} />  {location}</Location>
             </Description>
 
             <Stats>
@@ -33,6 +33,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
             </Stats>
         </Container>)
 };
+
 
 Profile.propTypes = {
     username: PropTypes.string.isRequired,

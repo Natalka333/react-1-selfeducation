@@ -3,6 +3,7 @@ import FriendListItem from "./FriendListItem";
 import { FriendsContainer, List } from '../FriendListItem/FriendList.styled'
 
 export default function FriendList({ friends }) {
+
     return (
         <FriendsContainer>
             <List>

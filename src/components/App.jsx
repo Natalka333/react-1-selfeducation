@@ -3,7 +3,7 @@ import Statistic from "./Statistics/Statistics";
 import FriendList from "./FriendListItem/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
-// import Counter from "./Counter/Counter";
+// import Counter from "./Counter";
 // import Dropdown from "./Dropdown/Dropdown";
 
 import user from '../Data/user.json'
@@ -22,6 +22,7 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
+
       />
       <Statistic title="Upload stats" stats={data} />
       <FriendList friends={friends} />
